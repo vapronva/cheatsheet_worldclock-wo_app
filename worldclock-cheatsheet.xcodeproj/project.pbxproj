@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E5C4E6C2746B19900FBE979 /* PackInfoSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5C4E6B2746B19900FBE979 /* PackInfoSettings.swift */; };
+		1E5C4E6E2746B2C700FBE979 /* api-download.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E5C4E6D2746B2C700FBE979 /* api-download.json */; };
+		1ED6352B2746596C00D031BC /* worldclock-cheatsheet WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1ED6352A2746596C00D031BC /* worldclock-cheatsheet WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1ED635302746596E00D031BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED6352F2746596E00D031BC /* Assets.xcassets */; };
+		1ED635372746596F00D031BC /* worldclock-cheatsheet WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1ED635362746596F00D031BC /* worldclock-cheatsheet WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1ED6353C2746596F00D031BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED6353B2746596F00D031BC /* ContentView.swift */; };
+		1ED6353E2746596F00D031BC /* worldclock_cheatsheetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED6353D2746596F00D031BC /* worldclock_cheatsheetApp.swift */; };
+		1ED635402746596F00D031BC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED6353F2746596F00D031BC /* ComplicationController.swift */; };
+		1ED635422746596F00D031BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED635412746596F00D031BC /* Assets.xcassets */; };
+		1ED635452746596F00D031BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED635442746596F00D031BC /* Preview Assets.xcassets */; };
+		1ED6355627465AF700D031BC /* SingleWatchTimeMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED6355527465AF700D031BC /* SingleWatchTimeMainScreen.swift */; };
+		1ED6355E2746690F00D031BC /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED6355D2746690F00D031BC /* JSONParser.swift */; };
+		1EE7BA252746F1F7000087BE /* ContentPackUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7BA242746F1F7000087BE /* ContentPackUpdater.swift */; };
+		1EE7BA272746FF52000087BE /* ClockFaceExMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7BA262746FF52000087BE /* ClockFaceExMain.swift */; };
+		1EE7BA2927470C4D000087BE /* ArticlesSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7BA2827470C4D000087BE /* ArticlesSearchView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1ED6352C2746596C00D031BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ED635202746596C00D031BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ED635292746596C00D031BC;
+			remoteInfo = "worldclock-cheatsheet WatchKit App";
+		};
+		1ED635382746596F00D031BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ED635202746596C00D031BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ED635352746596F00D031BC;
+			remoteInfo = "worldclock-cheatsheet WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1ED6354C2746596F00D031BC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1ED635372746596F00D031BC /* worldclock-cheatsheet WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED635502746596F00D031BC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1ED6352B2746596C00D031BC /* worldclock-cheatsheet WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E5C4E6B2746B19900FBE979 /* PackInfoSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackInfoSettings.swift; sourceTree = "<group>"; };
+		1E5C4E6D2746B2C700FBE979 /* api-download.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "api-download.json"; sourceTree = "<group>"; };
+		1ED635262746596C00D031BC /* worldclock-cheatsheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "worldclock-cheatsheet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ED6352A2746596C00D031BC /* worldclock-cheatsheet WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "worldclock-cheatsheet WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ED6352F2746596E00D031BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ED635312746596E00D031BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED635362746596F00D031BC /* worldclock-cheatsheet WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "worldclock-cheatsheet WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ED6353B2746596F00D031BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1ED6353D2746596F00D031BC /* worldclock_cheatsheetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = worldclock_cheatsheetApp.swift; sourceTree = "<group>"; };
+		1ED6353F2746596F00D031BC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		1ED635412746596F00D031BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ED635442746596F00D031BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1ED635462746596F00D031BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED6355527465AF700D031BC /* SingleWatchTimeMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleWatchTimeMainScreen.swift; sourceTree = "<group>"; };
+		1ED6355D2746690F00D031BC /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		1EE7BA242746F1F7000087BE /* ContentPackUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPackUpdater.swift; sourceTree = "<group>"; };
+		1EE7BA262746FF52000087BE /* ClockFaceExMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockFaceExMain.swift; sourceTree = "<group>"; };
+		1EE7BA2827470C4D000087BE /* ArticlesSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesSearchView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ED635332746596F00D031BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E5C4E6F2746B33500FBE979 /* ConcepptualAbstracts */ = {
+			isa = PBXGroup;
+			children = (
+				1EE7BA2827470C4D000087BE /* ArticlesSearchView.swift */,
+			);
+			path = ConcepptualAbstracts;
+			sourceTree = "<group>";
+		};
+		1ED6351F2746596C00D031BC = {
+			isa = PBXGroup;
+			children = (
+				1ED6352E2746596C00D031BC /* worldclock-cheatsheet WatchKit App */,
+				1ED6353A2746596F00D031BC /* worldclock-cheatsheet WatchKit Extension */,
+				1ED635272746596C00D031BC /* Products */,
+				1ED6355F27466A8600D031BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1ED635272746596C00D031BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ED635262746596C00D031BC /* worldclock-cheatsheet.app */,
+				1ED6352A2746596C00D031BC /* worldclock-cheatsheet WatchKit App.app */,
+				1ED635362746596F00D031BC /* worldclock-cheatsheet WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ED6352E2746596C00D031BC /* worldclock-cheatsheet WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1ED6352F2746596E00D031BC /* Assets.xcassets */,
+				1ED635312746596E00D031BC /* Info.plist */,
+			);
+			path = "worldclock-cheatsheet WatchKit App";
+			sourceTree = "<group>";
+		};
+		1ED6353A2746596F00D031BC /* worldclock-cheatsheet WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1ED6355C274668A700D031BC /* JsonParser */,
+				1ED63557274664CA00D031BC /* Downloads */,
+				1ED6353B2746596F00D031BC /* ContentView.swift */,
+				1E5C4E6F2746B33500FBE979 /* ConcepptualAbstracts */,
+				1ED6355427465A7F00D031BC /* SubViews */,
+				1ED6353D2746596F00D031BC /* worldclock_cheatsheetApp.swift */,
+				1ED6353F2746596F00D031BC /* ComplicationController.swift */,
+				1ED635412746596F00D031BC /* Assets.xcassets */,
+				1ED635462746596F00D031BC /* Info.plist */,
+				1ED635432746596F00D031BC /* Preview Content */,
+			);
+			path = "worldclock-cheatsheet WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		1ED635432746596F00D031BC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1ED635442746596F00D031BC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1ED6355427465A7F00D031BC /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				1ED6355527465AF700D031BC /* SingleWatchTimeMainScreen.swift */,
+				1E5C4E6B2746B19900FBE979 /* PackInfoSettings.swift */,
+				1EE7BA262746FF52000087BE /* ClockFaceExMain.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		1ED63557274664CA00D031BC /* Downloads */ = {
+			isa = PBXGroup;
+			children = (
+				1E5C4E6D2746B2C700FBE979 /* api-download.json */,
+			);
+			path = Downloads;
+			sourceTree = "<group>";
+		};
+		1ED6355C274668A700D031BC /* JsonParser */ = {
+			isa = PBXGroup;
+			children = (
+				1ED6355D2746690F00D031BC /* JSONParser.swift */,
+				1EE7BA242746F1F7000087BE /* ContentPackUpdater.swift */,
+			);
+			path = JsonParser;
+			sourceTree = "<group>";
+		};
+		1ED6355F27466A8600D031BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ED635252746596C00D031BC /* worldclock-cheatsheet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ED635512746596F00D031BC /* Build configuration list for PBXNativeTarget "worldclock-cheatsheet" */;
+			buildPhases = (
+				1ED635242746596C00D031BC /* Resources */,
+				1ED635502746596F00D031BC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ED6352D2746596C00D031BC /* PBXTargetDependency */,
+			);
+			name = "worldclock-cheatsheet";
+			packageProductDependencies = (
+			);
+			productName = "worldclock-cheatsheet";
+			productReference = 1ED635262746596C00D031BC /* worldclock-cheatsheet.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		1ED635292746596C00D031BC /* worldclock-cheatsheet WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ED6354D2746596F00D031BC /* Build configuration list for PBXNativeTarget "worldclock-cheatsheet WatchKit App" */;
+			buildPhases = (
+				1ED635282746596C00D031BC /* Resources */,
+				1ED6354C2746596F00D031BC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ED635392746596F00D031BC /* PBXTargetDependency */,
+			);
+			name = "worldclock-cheatsheet WatchKit App";
+			productName = "worldclock-cheatsheet WatchKit App";
+			productReference = 1ED6352A2746596C00D031BC /* worldclock-cheatsheet WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1ED635352746596F00D031BC /* worldclock-cheatsheet WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ED635492746596F00D031BC /* Build configuration list for PBXNativeTarget "worldclock-cheatsheet WatchKit Extension" */;
+			buildPhases = (
+				1ED635322746596F00D031BC /* Sources */,
+				1ED635332746596F00D031BC /* Frameworks */,
+				1ED635342746596F00D031BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "worldclock-cheatsheet WatchKit Extension";
+			packageProductDependencies = (
+			);
+			productName = "worldclock-cheatsheet WatchKit Extension";
+			productReference = 1ED635362746596F00D031BC /* worldclock-cheatsheet WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ED635202746596C00D031BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					1ED635252746596C00D031BC = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					1ED635292746596C00D031BC = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					1ED635352746596F00D031BC = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 1ED635232746596C00D031BC /* Build configuration list for PBXProject "worldclock-cheatsheet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1ED6351F2746596C00D031BC;
+			packageReferences = (
+			);
+			productRefGroup = 1ED635272746596C00D031BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ED635252746596C00D031BC /* worldclock-cheatsheet */,
+				1ED635292746596C00D031BC /* worldclock-cheatsheet WatchKit App */,
+				1ED635352746596F00D031BC /* worldclock-cheatsheet WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ED635242746596C00D031BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED635282746596C00D031BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED635302746596E00D031BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED635342746596F00D031BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E5C4E6E2746B2C700FBE979 /* api-download.json in Resources */,
+				1ED635452746596F00D031BC /* Preview Assets.xcassets in Resources */,
+				1ED635422746596F00D031BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ED635322746596F00D031BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED6353C2746596F00D031BC /* ContentView.swift in Sources */,
+				1ED6355E2746690F00D031BC /* JSONParser.swift in Sources */,
+				1EE7BA252746F1F7000087BE /* ContentPackUpdater.swift in Sources */,
+				1ED6353E2746596F00D031BC /* worldclock_cheatsheetApp.swift in Sources */,
+				1E5C4E6C2746B19900FBE979 /* PackInfoSettings.swift in Sources */,
+				1EE7BA272746FF52000087BE /* ClockFaceExMain.swift in Sources */,
+				1ED635402746596F00D031BC /* ComplicationController.swift in Sources */,
+				1EE7BA2927470C4D000087BE /* ArticlesSearchView.swift in Sources */,
+				1ED6355627465AF700D031BC /* SingleWatchTimeMainScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1ED6352D2746596C00D031BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ED635292746596C00D031BC /* worldclock-cheatsheet WatchKit App */;
+			targetProxy = 1ED6352C2746596C00D031BC /* PBXContainerItemProxy */;
+		};
+		1ED635392746596F00D031BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ED635352746596F00D031BC /* worldclock-cheatsheet WatchKit Extension */;
+			targetProxy = 1ED635382746596F00D031BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1ED635472746596F00D031BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1ED635482746596F00D031BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1ED6354A2746596F00D031BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"worldclock-cheatsheet WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = MT4VW3PLMN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "worldclock-cheatsheet WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.vapronva.worldclock-cheatsheet.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		1ED6354B2746596F00D031BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"worldclock-cheatsheet WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = MT4VW3PLMN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "worldclock-cheatsheet WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.vapronva.worldclock-cheatsheet.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		1ED6354E2746596F00D031BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = MT4VW3PLMN;
+				IBSC_MODULE = worldclock_cheatsheet_WatchKit_Extension;
+				INFOPLIST_FILE = "worldclock-cheatsheet WatchKit App/Info.plist";
+				MARKETING_VERSION = 0.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.vapronva.worldclock-cheatsheet.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		1ED6354F2746596F00D031BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = MT4VW3PLMN;
+				IBSC_MODULE = worldclock_cheatsheet_WatchKit_Extension;
+				INFOPLIST_FILE = "worldclock-cheatsheet WatchKit App/Info.plist";
+				MARKETING_VERSION = 0.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.vapronva.worldclock-cheatsheet.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		1ED635522746596F00D031BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = MT4VW3PLMN;
+				MARKETING_VERSION = 0.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.vapronva.worldclock-cheatsheet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1ED635532746596F00D031BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = MT4VW3PLMN;
+				MARKETING_VERSION = 0.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.vapronva.worldclock-cheatsheet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ED635232746596C00D031BC /* Build configuration list for PBXProject "worldclock-cheatsheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED635472746596F00D031BC /* Debug */,
+				1ED635482746596F00D031BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ED635492746596F00D031BC /* Build configuration list for PBXNativeTarget "worldclock-cheatsheet WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED6354A2746596F00D031BC /* Debug */,
+				1ED6354B2746596F00D031BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ED6354D2746596F00D031BC /* Build configuration list for PBXNativeTarget "worldclock-cheatsheet WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED6354E2746596F00D031BC /* Debug */,
+				1ED6354F2746596F00D031BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ED635512746596F00D031BC /* Build configuration list for PBXNativeTarget "worldclock-cheatsheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED635522746596F00D031BC /* Debug */,
+				1ED635532746596F00D031BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1ED635202746596C00D031BC /* Project object */;
+}
