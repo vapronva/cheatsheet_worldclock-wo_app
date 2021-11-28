@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1E5C4E6C2746B19900FBE979 /* PackInfoSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5C4E6B2746B19900FBE979 /* PackInfoSettings.swift */; };
-		1E5C4E6E2746B2C700FBE979 /* api-download.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E5C4E6D2746B2C700FBE979 /* api-download.json */; };
 		1ED6352B2746596C00D031BC /* worldclock-cheatsheet WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1ED6352A2746596C00D031BC /* worldclock-cheatsheet WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1ED635302746596E00D031BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED6352F2746596E00D031BC /* Assets.xcassets */; };
 		1ED635372746596F00D031BC /* worldclock-cheatsheet WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1ED635362746596F00D031BC /* worldclock-cheatsheet WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -22,6 +21,8 @@
 		1EE7BA252746F1F7000087BE /* ContentPackUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7BA242746F1F7000087BE /* ContentPackUpdater.swift */; };
 		1EE7BA272746FF52000087BE /* ClockFaceExMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7BA262746FF52000087BE /* ClockFaceExMain.swift */; };
 		1EE7BA2927470C4D000087BE /* ArticlesSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7BA2827470C4D000087BE /* ArticlesSearchView.swift */; };
+		1EE7BA2B27471A08000087BE /* SingleArticleExtensiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7BA2A27471A08000087BE /* SingleArticleExtensiveView.swift */; };
+		1EF8298A275134A000A45192 /* parseAllDocsToJSON.py in Resources */ = {isa = PBXBuildFile; fileRef = 1EF82989275134A000A45192 /* parseAllDocsToJSON.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +69,6 @@
 
 /* Begin PBXFileReference section */
 		1E5C4E6B2746B19900FBE979 /* PackInfoSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackInfoSettings.swift; sourceTree = "<group>"; };
-		1E5C4E6D2746B2C700FBE979 /* api-download.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "api-download.json"; sourceTree = "<group>"; };
 		1ED635262746596C00D031BC /* worldclock-cheatsheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "worldclock-cheatsheet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED6352A2746596C00D031BC /* worldclock-cheatsheet WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "worldclock-cheatsheet WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED6352F2746596E00D031BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +85,8 @@
 		1EE7BA242746F1F7000087BE /* ContentPackUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPackUpdater.swift; sourceTree = "<group>"; };
 		1EE7BA262746FF52000087BE /* ClockFaceExMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockFaceExMain.swift; sourceTree = "<group>"; };
 		1EE7BA2827470C4D000087BE /* ArticlesSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesSearchView.swift; sourceTree = "<group>"; };
+		1EE7BA2A27471A08000087BE /* SingleArticleExtensiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleArticleExtensiveView.swift; sourceTree = "<group>"; };
+		1EF82989275134A000A45192 /* parseAllDocsToJSON.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = parseAllDocsToJSON.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1EE7BA2827470C4D000087BE /* ArticlesSearchView.swift */,
+				1EE7BA2A27471A08000087BE /* SingleArticleExtensiveView.swift */,
 			);
 			path = ConcepptualAbstracts;
 			sourceTree = "<group>";
@@ -109,6 +112,7 @@
 		1ED6351F2746596C00D031BC = {
 			isa = PBXGroup;
 			children = (
+				1EF82989275134A000A45192 /* parseAllDocsToJSON.py */,
 				1ED6352E2746596C00D031BC /* worldclock-cheatsheet WatchKit App */,
 				1ED6353A2746596F00D031BC /* worldclock-cheatsheet WatchKit Extension */,
 				1ED635272746596C00D031BC /* Products */,
@@ -139,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				1ED6355C274668A700D031BC /* JsonParser */,
-				1ED63557274664CA00D031BC /* Downloads */,
 				1ED6353B2746596F00D031BC /* ContentView.swift */,
 				1E5C4E6F2746B33500FBE979 /* ConcepptualAbstracts */,
 				1ED6355427465A7F00D031BC /* SubViews */,
@@ -168,14 +171,6 @@
 				1EE7BA262746FF52000087BE /* ClockFaceExMain.swift */,
 			);
 			path = SubViews;
-			sourceTree = "<group>";
-		};
-		1ED63557274664CA00D031BC /* Downloads */ = {
-			isa = PBXGroup;
-			children = (
-				1E5C4E6D2746B2C700FBE979 /* api-download.json */,
-			);
-			path = Downloads;
 			sourceTree = "<group>";
 		};
 		1ED6355C274668A700D031BC /* JsonParser */ = {
@@ -299,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF8298A275134A000A45192 /* parseAllDocsToJSON.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +310,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5C4E6E2746B2C700FBE979 /* api-download.json in Resources */,
 				1ED635452746596F00D031BC /* Preview Assets.xcassets in Resources */,
 				1ED635422746596F00D031BC /* Assets.xcassets in Resources */,
 			);
@@ -327,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE7BA2B27471A08000087BE /* SingleArticleExtensiveView.swift in Sources */,
 				1ED6353C2746596F00D031BC /* ContentView.swift in Sources */,
 				1ED6355E2746690F00D031BC /* JSONParser.swift in Sources */,
 				1EE7BA252746F1F7000087BE /* ContentPackUpdater.swift in Sources */,

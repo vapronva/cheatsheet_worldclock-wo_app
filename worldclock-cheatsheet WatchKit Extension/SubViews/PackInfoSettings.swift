@@ -26,10 +26,10 @@ struct PackInfoSettings: View {
                         Text("Автор:\n")
                             .font(Font.system(.caption).weight(.light))
                         + Text("\(pack.packInfo.author)")
-                        Text("Ссылка на источник:\n")
-                            .font(Font.system(.caption).weight(.light))
-                        + Text("\(parser.packURL)")
-                            .font(Font.system(size: 10, design: .monospaced).weight(.ultraLight))
+//                        Text("Ссылка на источник:\n")
+//                            .font(Font.system(.caption).weight(.light))
+//                        + Text("\(parser.packURL)")
+//                            .font(Font.system(size: 10, design: .monospaced).weight(.ultraLight))
                     }
                     Section(header: Text("Контент")) {
                         Text("Всего пунктов:\n")
@@ -40,15 +40,15 @@ struct PackInfoSettings: View {
                         Text("Текущая локальная версия:\n")
                             .font(Font.system(.caption).weight(.light))
                         + Text("\(pack.packInfo.version)")
-                        Text("Версия пака на сервере:\n")
-                            .font(Font.system(.caption).weight(.light))
-                        + Text("\(parser.remoteVersion)")
-                        Button(action: {
-                            parser.getRemoteVersion()
-                        }) {
-                            Text("Загрузить актуальную версию")
-//                                .font(Font.system(.caption).weight(.semibold))
-                        }
+//                        Text("Версия пака на сервере:\n")
+//                            .font(Font.system(.caption).weight(.light))
+//                        + Text("\(parser.remoteVersion)")
+//                        Button(action: {
+//                            parser.getUpdate()
+//                        }) {
+//                            Text("Загрузить актуальную версию")
+////                                .font(Font.system(.caption).weight(.semibold))
+//                        }
                     }.onAppear(perform: {
                         parser.getRemoteVersion()
                         print("CUM")
@@ -69,7 +69,7 @@ struct PackInfoSettings: View {
 }
 
 struct PackInfoSettings_Previews: PreviewProvider {
-    @StateObject static var parser: JSONParser = JSONParser(packURL: URL(string: "https://cheatsheet-worldclock.api.vapronva.pw/get?key=bruh&author=thispilot")!)
+    @StateObject static var parser: JSONParser = JSONParser(packURL: URL(string: "https://pub.fs.vapronva.pw/.application-assets/worldclock-cheatsheet/thispilots/ds.json")!)
     static var previews: some View {
         PackInfoSettings(pack: parser.getInformation(), parser: parser, isShowingSettings: Binding.constant(true))
     }

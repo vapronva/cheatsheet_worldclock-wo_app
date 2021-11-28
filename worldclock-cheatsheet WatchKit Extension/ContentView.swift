@@ -11,7 +11,7 @@ struct ContentView: View {
     
     @State var isShowingSettings: Bool = false
     @State var isShowingSearch: Bool = false
-    @StateObject var parser: JSONParser = JSONParser(packURL: URL(string: "https://cheatsheet-worldclock.api.vapronva.pw/get?key=bruh&author=thispilot")!)
+    @StateObject var parser: JSONParser = JSONParser(packURL: URL(string: "https://pub.fs.vapronva.pw/.application-assets/worldclock-cheatsheet/thispilots/ds.json")!)
     
     var body: some View {
         NavigationView {

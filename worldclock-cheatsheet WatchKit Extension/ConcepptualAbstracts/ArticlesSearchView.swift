@@ -19,15 +19,14 @@ struct ArticlesSearchView: View {
         NavigationView {
             List {
                 ForEach(pack.content, id: \.id) { value in
-                    Text(value.title)
-                        .searchable(text: $textSearch, prompt: Text("Поиск"))
+                    NavigationLink(value.title, destination: SingleArticleExtensiveView(titleArticle: value.title, textArticle: value.text))
+//                        .searchable(text: $textSearch, prompt: Text("Поиск"))
                 }
-                Text("Suck")
-                    
             }
                 .navigationBarTitle(Text(pack.packInfo.name))
 //              .navigationBarTitleDisplayMode(.automatic)
-        }.searchable(text: $textSearch, prompt: Text("Поиск"))
+        }
+        .searchable(text: $textSearch, prompt: Text("Поиск"))
     }
 }
 

@@ -18,9 +18,10 @@ struct SingleWatchTimeMainScreen: View {
             Color(red: 25/255, green: 25/255, blue: 25/255)
 //                .frame(maxHeight: 65)
             HStack {
+                Spacer()
                 ClockFaceExMain(isDark: Binding.constant(true), currentTime: $currentTime)
                     .padding(.trailing, 12)
-                    .padding(.leading, 22)
+//                    .padding(.leading, 0)
                 Spacer()
                 VStack (alignment: .center) {
                     Text(self.cityName)
@@ -29,7 +30,7 @@ struct SingleWatchTimeMainScreen: View {
                     Text("\(timeString(date: date))")
                          .onAppear(perform: {let _ = self.updateTimer})
                          .font(Font.system(.title3, design: .monospaced).weight(.semibold))
-                }.padding(.trailing, 8)
+                }.padding(.trailing, 17)
             }.padding(.vertical, 5)
         }.onChange(of: date) { _ in
             getTimeComponents()
@@ -57,7 +58,7 @@ struct SingleWatchTimeMainScreen: View {
         let min = calender.component(.minute, from: Date())
         let hour = calender.component(.hour, from: Date())
         withAnimation(Animation.linear(duration: 0.01)) {
-            currentTime = Time(sec: sec, min: min, hour: hour)
+            currentTime = Time(sec: sec, min: min, hour: hour + self.minusHowManyHours)
         }
     }
 }
